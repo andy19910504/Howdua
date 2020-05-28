@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/common/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link href="./css/common/mobile.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 0px) and (max-width: 767px)" />
+
+  <title>HowDua</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header class="header">
+      <a class="logo" href="index.html"><img src="./images/How Dua LOGO.png"></a>
+      <div class="navbar-header">
+        <button type="button" class="btn_switch" id="hamburger_icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="header_main">
+        <nav class="nav main_nav">
+          <ul class="nav_list">
+            <li>
+              <a href="./About.html">關於我們<br>About</a>
+            </li>
+            <li>
+              <a href="./Designteam.html">設計團隊<br>DesignTeam</a>
+            </li>
+            <li>
+              <a href="./Portfolio.html">作品<br>Portfolio</a>
+            </li>
+            <li>
+              <a href="./Awards.html">得獎紀錄<br>Awards</a>
+            </li>
+            <li>
+              <a href="./Serve.html">服務<br>Serve</a>
+            </li>
+            <li>
+              <a class="mark" href="./contact.html">聯絡我們<br>Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="icon main_nav">
+          <div class="social-btns">
+            <a class="btn facebook" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="btn youtube" href="#"><i class="fa fa-youtube"></i></a>
+            <a class="btn instagram" href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="background " ></div>
+      <div class="mainArea ins">
+        <div class="formBox clearfix">
+          <form method="post" name="service_form" id="service_form" autocomplete="off">
+            <div class="g-tv-12 clearfix">
+              <label for="">問題分類</label>
+              <select name="data_category_title" id="data_category_title">
+                <option value="" selected="selected">請選擇分類</option>
+                <option value="2">免費預約丈量</option>
+                <option value="1">設計裝修諮詢</option>
+                <option value="3">維修服務</option>
+                <option value="4">建議回饋</option>
+                <option value="5">其他</option>
+              </select>
+            </div>
+            <div class="g-tv-6">
+              <div class="left"><label for="data_name"><em>※</em>姓名</label><label><input name="data_sex" type="radio"
+                    value="0" checked="checked">先生</label><label><input name="data_sex" type="radio"
+                    value="1">小姐</label>
+              </div>
+              <div class="right"><input type="text" id="data_name" name="data_name" data-note="姓名" class="require">
+              </div>
+            </div>
+            <div class="g-tv-6">
+              <div class="left"><label for="data_email">電子信箱</label></div>
+              <div class="right"><input type="text" id="data_email" name="data_email" data-note="電子信箱" class="">
+              </div>
+            </div>
+            <div class="g-tv-6">
+              <div class="left"><label for="data_telephone"><em>※</em>聯絡電話</label></div>
+              <div class="right"><input type="text" id="data_telephone" name="data_telephone" data-note="聯絡電話"
+                  class="require"></div>
+            </div>
+            <div class="g-tv-6">
+              <div class="left"><label for="data_contact_time"><em>※</em>聯絡時間</label></div>
+              <div class="right"><input type="text" id="data_contact_time" name="data_contact_time" data-note="聯絡時間"
+                  placeholder="例如：9-18" class="require"></div>
+            </div>
+            <div class="g-tv-6">
+              <div class="left"><label for="data_decorate_area"><em>※</em>裝修地區</label></div>
+              <div class="right"><input type="text" id="data_decorate_area" name="data_decorate_area" data-note="裝修地區"
+                  placeholder="例如：苓雅區、前鎮區..." class="require"></div>
+            </div>
+            <div class="g-tv-6">
+              <div class="left"><label for="data_decorate_ping">坪數</label></div>
+              <div class="right"><input type="text" id="data_decorate_ping" name="data_decorate_ping" data-note="坪數">
+              </div>
+            </div>
+            <div class="g-tv-6">
+              <div class="left"><label for="data_decorate_title"><em>※</em>裝修空間(可複選)</label></div>
+              <div class="right decorate_title_box" data-note="裝修空間">
+                <label><input name="data_decorate_title[]" type="checkbox" value="新成屋">新成屋</label>
+                <label><input name="data_decorate_title[]" type="checkbox" value="舊屋翻新">舊屋翻新</label>
+                <label><input name="data_decorate_title[]" type="checkbox" value="全室規劃">全室規劃</label>
+                <label><input name="data_decorate_title[]" type="checkbox" value="局部規劃">局部規劃</label>
+                <label><input name="data_decorate_title[]" type="checkbox" value="維修服務">維修服務</label>
+                <label><input name="data_decorate_title[]" type="checkbox" value="其他">其他</label>
+                <input type="hidden" id="data_decorate_title" name="data_decorate_title" value="">
+              </div>
+            </div>
+            <div class="g-tv-12">
+              <div class="left"><label for="data_exp">備註說明</label></div>
+              <div class="right"><textarea id="data_exp" name="data_exp" data-note="備註說明"></textarea></div>
+            </div>
+            <div class="checkArea">
+              <div class="btn">
+                <a class="submit btn_color1" id="submit_btn" onclick="senddata()">確認送出</a><i id="submit_loading_icon"
+                  class="fa fa-spinner fa-spin" style="display:none"></i>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <footer class="footer">
+        <div class="footer_main">
+          <div class="address">
+            <p>地址:高雄市苓雅區政南路</p>
+            <p>電話:07-1234567</p>
+            <p>E-MAIL:abcd1234@gmail.com</p>
+            <p>&copy;All Rights Reserved</p>
+          </div>
+          <div class="social-btns social-btns1 ">
+            <a class="btn facebook" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="btn youtube" href="#"><i class="fa fa-youtube"></i></a>
+            <a class="btn instagram" href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+          <div class="footer_list">
+            <ul class="list">
+              <li><a href="./About.html">關於我們<br>About</a></li>
+              <li><a href="./Design team.html">設計團隊<br>DesignTeam</a></li>
+              <li><a href="./Portfolio.html">作品<br>Portfolio</a></li>
+            </ul>
+            <ul class="list">
+              <li><a href="Awards.html">得獎紀錄<br>Awards</a></li>
+              <li><a href="./Serve.html">服務<br>Serve</a></li>
+              <li><a href="./contact.html">聯絡我們<br>Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script>
+    $(function () {
+      /* 按鈕狀態的切換 */
+      $("#hamburger_icon").on("click", function () {
+        $(this).toggleClass("on");
+      });
+    });
+  </script>
+  <script>
+    $(function () {
+
+      // 點擊按鈕，選單縮放
+      $("button.btn_switch").on("click", function () {
+        $(".header_main").slideToggle();
+      });
+
+    });
+  </script>
+</body>
+
+</html>

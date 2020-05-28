@@ -1,0 +1,101 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+
+
+li a.mark{
+  color:#77AA00
+}
+  div.background{
+      width: 100%;
+      height: 600px;
+      background-image: url(../images/background/background3.jpg);
+      background-position: bottom;
+      background-size: cover;
+      background-attachment: fixed;
+  }
+
+/**/
+  div.Award_wrapper{
+    text-align: center;
+    display: flex;
+    width:100% ;
+    margin-top: 50px;
+  }
+ 
+
+  /*Award_wrapper*/
+  /*Award1*/
+  div.Award1_thumbcon{
+    overflow: hidden;
+  }
+  img.Award1_thumbcon{
+    width: 400px;
+    transform:scale(1,1);transition: all 1s ease-out;
+}
+img.Award1_thumbcon:hover{
+    transform:scale(1.2,1.2);
+}
+div.thumbcon{
+    margin-top: 10px;
+    color: grey;
+}
+
+/*Award2*/
+div.Award2_thumbcon{
+  overflow: hidden;
+}
+img.Award2_thumbcon{
+  width: 400px;
+  transform:scale(1,1);transition: all 1s ease-out;
+}
+img.Award2_thumbcon:hover{
+  transform:scale(1.2,1.2);
+}
+div.thumbcon2{
+  margin-top: 10px;
+  color: gray;
+}
+
+/*Award3*/
+div.Award3_thumbcon{
+  overflow: hidden;
+}
+img.Award3_thumbcon{
+  width: 400px;
+  transform:scale(1,1);transition: all 1s ease-out;
+}
+img.Award3_thumbcon:hover{
+  transform:scale(1.2,1.2);
+}
+
+div.thumbcon3{
+  margin-top: 10px;
+  color: gray;
+}
+@media screen and (max-width: 767px) {
+  div.background {
+    background-image: none;
+    visibility:none;
+    height: 100px;
+}
+  .Award_wrapper {
+    margin: 0rem auto;
+    text-align: center;
+  }
+  img.Award1_thumbcon{
+    margin-top: 30px;
+    width: 100%;
+    transform:none;
+}
+img.Award2_thumbcon{
+  margin-top: 30px;
+  width: 100%;
+  transform:none;
+}
+img.Award3_thumbcon{
+  margin-top: 30px;
+  width: 100%;
+  transform:none;
+}
+}

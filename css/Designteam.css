@@ -1,0 +1,217 @@
+@import"./common/all.css";
+@import"./common/footer.css";
+@import"./common/header.css";
+
+
+
+li a.mark{
+    color:#77AA00
+}
+  div.background{
+      width: 100% !important;
+      height: 600px;
+      background-image: url(../images/background/background.jpg);
+      background-position: bottom;
+      background-size: cover;
+      background-attachment: fixed;
+  }
+  /*Designteam_wrapper*/
+
+  div.Designteam_wrapper{
+    margin-top:30px;
+    position: relative;
+    width:1200px;
+    justify-content: center;
+    
+  }
+  div.Designteam_title{
+      text-align: center;
+  }
+  small.Designteam_title{
+      font-size: 14px;
+  }
+
+  small.Designteam_title{
+    width: 150px;
+    font-size: 16px;
+    margin-left:10px;
+  }
+  small.Designteam_title::before{
+    content: "/";
+    font-size: 24px;
+    margin-right:10px ;
+  }
+div.Design_title{
+    margin-left: 10px;
+    color: gray;
+}
+small.Design_title{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+/*Designteam_Boss*/
+div.Designteam_Boss{
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+div.Designteam_Boss_img{
+    flex-wrap: wrap;
+    height: 450px;
+    width: 500px;
+    overflow: hidden;
+    float: left;
+}
+figure.Boss_img1-1{
+    display: none;
+    /* height: 100%; */
+}
+figure.Boss_img{
+    transition: all 0.5s;
+}
+figure.Boss_img:hover{
+    transform: translateY(-450px);
+}
+div.Designteam_name{
+text-align: left;
+}
+small.Designteam_name::before{
+    content: "/";
+    margin-right: 5px;
+    margin-left: 5px;
+}
+/*OK*/
+/*experience_IVY*/
+div.experience_IVY{
+    width: 500px;
+    margin-left: 600px;
+}
+
+/*Designteam_Boss2*/
+div.Designteam_Boss_img1{
+    height: 450px;
+    width: 500px;
+    overflow: hidden;
+    float: left;
+}
+figure.Boss_img2-2{
+    display: none;
+    /* height: 100%; */
+}
+figure.Boss_img2{
+    transition: all 0.5s;
+}
+figure.Boss_img2:hover{
+    transform: translateY(-450px);
+}
+div.Designteam_name2{
+    text-align: left;
+}
+small.Designteam_name1::before{
+    content: "/";
+    margin-right: 5px;
+    margin-left: 5px;
+}
+div.experience_Coco{
+    margin-top: 50px;
+    width: 500px;
+    margin-left: 600px;
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper{
+        padding: 10px;
+    }
+    div.background {
+        background-image: none;
+        visibility:none;
+        height: 150px;
+    }
+    div.Designteam_title{
+        margin-bottom: 50px;
+    }
+    div.Designteam_wrapper{
+        flex-wrap: wrap;
+        margin: 0 auto;
+        position: relative;
+        width:100% !important;
+        /* justify-content: center; */
+      }
+      div.Designteam_Boss{
+        display: flex;
+        flex-wrap: wrap;
+        width:100% !important;
+
+    }
+    div.Designteam_Boss_img{
+        height: 410px;
+        width: 100% !important; 
+        overflow: hidden;
+        margin: 0;
+    }
+    figure.Boss_img{
+        transition: none;
+        height: 400px !important;
+        width: 100% !important; 
+        display: none; 
+    }
+    figure.Boss_img1-1,figure.Boss_img2-2{
+        width: 100% !important;
+        display: block;
+        /* height: 100%; */
+    }
+    figure.Boss_img1-1>img,
+    figure.Boss_img2-2>img{
+        width: 100% !important;
+        /* height: 100%; */
+    }
+    figure.Boss_img:hover{
+        transform: none !important;
+    }
+    small.Designteam_name::before{
+        content: "/";
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    div.experience_IVY{
+        flex-wrap: wrap;
+        margin-top: 0px;
+        width: 100% !important;
+        margin-left:0px;
+
+
+    }
+
+    /*Designteam_Boss2*/
+div.Designteam_Boss2{
+    width:100% !important;
+}
+div.Designteam_Boss_img1{
+    width:100% !important;
+    overflow: hidden;
+}
+figure.Boss_img2{
+    display: none;
+}
+.Boss_img2>img{
+    width: 100%;
+}
+figure.Boss_img2:hover{
+    transform:none !important;
+}
+div.curcle1{
+visibility: hidden;
+    }
+
+/* div.Designteam_name2{
+    width: 130px;
+} */
+
+div.experience_Coco{
+    flex-wrap: wrap;
+    margin-top: 0px;
+    width: 100% !important;
+    margin-left:0px;
+}
+
+}
+

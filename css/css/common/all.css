@@ -1,0 +1,145 @@
+/* @media screen and (min-width: 768px){
+    h1{
+        width: 700px;
+        height: 500px;
+        background-color: red;
+        line-height: 500px;
+        color: yellow;
+    }
+}
+@media screen and (min-width: 1200px){
+    h1{
+        width: 1200px;
+        height: 800px;
+        background:linear-gradient( 45deg,#369 0%,#309 100%);
+        background-attachment:fixed ;
+        color: #fff;
+    }
+} */
+
+* {
+    font-family: "微軟正黑體", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    line-height: 35px;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url(/images/whitey_@2X.png);
+    position: relative;
+    width: 100%;
+}
+
+
+
+
+
+
+
+/**/
+#hamburger_icon {
+    outline: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+}
+
+button>span {
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: #d3531a;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+span:nth-child(1) {
+    top: 0px;
+}
+
+span:nth-child(2) {
+    top: 18px;
+}
+
+span:nth-child(3) {
+    top: 36px;
+}
+
+#hamburger_icon.on span:nth-child(1) {
+    top: 18px;
+    transform: rotate(135deg);
+}
+
+#hamburger_icon.on span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+#hamburger_icon.on span:nth-child(3) {
+    top: 18px;
+    transform: rotate(-135deg);
+}
+/*桌機版*/
+@media screen and (min-width: 768px) {
+
+    .header_main{
+        display: block;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+}
+
+/*手機版*/
+@media screen and (max-width: 767px) {
+    .header .logo>img{
+        position: absolute !important;
+        left: 50px !important;
+        height: 70px;
+        margin: 5px;
+      }
+       .header .logo>img{
+        transform:none !important;
+        transition: none !important;
+      }
+      a.logo>img:hover{
+        transform:none !important;
+      }
+
+    div.header_main{
+        display: none;
+    }
+    .navbar-header {
+        position: absolute !important;
+        left:0px !important;
+        top: 30px;
+        z-index: 999;
+    }
+    .header_main{
+        display:inline-block;
+        width: 100px;
+        height: 600px;
+        background-color: white;
+        z-index: 998;
+        overflow-x: auto;
+    }
+    .nav_list{
+        display:block;
+        width: 200px;
+    }
+    .footer{
+        display: none !important;
+    }
+
+
+}

@@ -1,0 +1,407 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+
+
+
+
+li a.mark{
+    color:#77AA00
+}
+  div.background{
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/background/background2.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+  }
+/* CSS Document */
+
+/******列表******/
+  ul.itemList{
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 -20px;
+  }
+  ul.itemList li{
+    position: relative;
+    padding: 20px;
+    z-index: 1;
+  }
+  ul.itemList li .item{
+    position: relative;
+    z-index: 1;
+  }
+  ul.itemList li .Img img{
+    width: 100%;
+  }
+  ul.itemList li .Txt{
+    padding: 20px 15px;
+    text-align: center;
+  }
+  ul.itemList li .Txt h3{
+    color: #111;
+    font-size: 22px;
+    font-weight: 400;
+  }
+  ul.itemList li .Txt h3 a{
+    color: #111;
+  }
+  ul.itemList li:hover .Txt h3 a{
+    color: #77aa00;
+  }
+  ul.itemList li .Txt .txtExp{
+    color: #bbb;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+/******內頁******/
+  .mainArea.ins .titleBox.hide{
+    text-indent: -9999px;
+    opacity: 0;
+    z-index: -5;
+  }
+  .mainArea.ins a{
+    cursor: pointer;
+  }
+  .contentBox .topBox{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: -85px;
+  }
+  .contentBox .topBox .Txt{
+    text-align: center;
+    padding-top: 40px;
+  }
+  .contentBox .topBox .Txt .txtExp{
+    color: #bbb;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  .contentBox .bottomBox{
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .contentBox .textEditor{
+    color: #111;
+    line-height: 1.8;
+  }
+  .contentBox .textEditor + .textEditor{
+    margin-top: 10px;
+  }
+  .contentBox .textEditor table td{
+    background: transparent;
+    border: 1px solid transparent;
+    border-bottom-color: #e4e4e4;
+    padding: 8px 5px 8px 0;
+  }
+  .contentBox .textEditor table tr:first-of-type td{
+    border-top-color: #e4e4e4;
+  }
+  .contentBox .textEditor table td strong{
+    font-weight: 400;
+  }
+
+  .contentBox .btn.back{
+    margin-top: 60px;
+  }
+
+
+/***********內頁***********/
+  .mainArea.ins{
+    width: 1200px;
+    padding: 110px 0 120px;
+    position: relative;
+  }
+
+  .mainArea.ins .titleBox{
+    width: 350px;
+  }
+  .Img{
+    width: 500px;
+  }
+
+  /*類別*/
+    .m_classLink{
+      display: none;
+    }
+    .classBox{
+      width: 100%;
+      padding: 0 0 0 350px;
+      position: relative;
+      border-bottom: 1px solid #ddd;
+      margin-top: -50px;
+    }
+    ul.classLink{
+      display: block;
+      padding: 0;
+      position: relative;
+      text-align: right;
+      z-index: 4;
+    }
+    ul.classLink li{
+      display: inline-block;
+      position: relative;
+      padding: 0;
+      margin-top: 10px;
+    }
+    ul.classLink li > a{
+      color: #333;
+      background: transparent;
+      /* border: 1px solid #fff; */
+      border-radius: 0;
+      display: block;
+      font-size: 16px;
+      line-height: 1;
+      letter-spacing: 0.5px;
+      text-align: center;
+      position: relative;
+      padding: 20px 22px;
+    }
+    ul.classLink li:last-of-type > a{
+      padding-right: 5px;
+    }
+    ul.classLink li:hover > a,
+    ul.classLink li > a.current{
+      color: #77aa00;
+    }
+    ul.classLink li > a::before{
+      content: '';
+      width: 0;
+      height: 2px;
+      background: #77aa00;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+    }
+    ul.classLink li:hover > a::before,
+    ul.classLink li > a.current::before{
+      width: 104%;
+      left: -2%;
+    }
+
+    ul.classLink li > dl{
+      width: 104%;
+      position: absolute;
+      top: 100%;
+      left: -2%;
+      opacity: 0;
+      visibility: hidden;
+    }
+    ul.classLink li:hover > dl{
+      opacity: 1;
+      visibility: visible;
+    }
+    ul.classLink li > a.current + dl{
+      display: block;
+    }
+    ul.classLink li > dl dt{
+      display: block;
+      padding: 1px 5px 0;
+    }
+    ul.classLink li > dl a,
+    ul.classLink li a.current + dl a{
+      display: block;
+      margin: 0;
+      padding: 5px 5px 5px 20px;
+      background: rgba(255, 255, 255, 0.7);
+      color: #555;
+      font-size: 14px;
+      letter-spacing: 0.8px;
+      text-align: left;
+    }
+    ul.classLink li > dl a:hover,
+    ul.classLink li a.current + dl a:hover,
+    ul.classLink li a.current + dl a.current{
+      color: #77aa00;
+    }
+ /*頁碼*/
+  .pageBox_main{
+    display: flex;
+    width: 100%;
+  }
+    .pageBox{
+      width:100%;
+      margin: 20px 0 0;
+      padding: 0;
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .pageBox a{
+      line-height: 65px;
+      padding: 0 15px;
+      text-align: center;
+      color: #bbb;
+      font-size: 16px;
+      font-weight: 400;
+      border-radius: 0;
+      background: transparent;
+    }
+    .pageBox a:hover,
+    .pageBox a.current{
+      color: #333;
+    }
+    .pageBox a.page_prev,
+    .pageBox a.page_next{
+      width: 65px;
+      height: 65px;
+      border: 1px solid #e5e5e5;
+      border-radius: 50%;
+      font-size: 0;
+      position: relative;
+    }
+    .pageBox a.page_prev{
+      margin: 0 40px 0 0;
+    }
+    .pageBox a.page_next{
+      margin: 0 0 0 40px;
+    }
+    .pageBox a.page_prev:hover,
+    .pageBox a.page_next:hover{
+      border-color: #6fa203;
+    }
+    .pageBox a.page_prev::before,
+    .pageBox a.page_next::before{
+      content: '';
+      width: 22px;
+      height: 1px;
+      background: #333;
+      position: absolute;
+      top: 50%;
+      left: calc(50% - 11px);
+    }
+    .pageBox a.page_prev::after,
+    .pageBox a.page_next::after{
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-top: 1px solid #333;
+      border-right: 1px solid #333;
+      position: absolute;
+      top: calc(50% - 3px);
+    }
+    .pageBox a.page_prev::after{
+      left: calc(50% - 11px);
+      -webkit-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+    }
+    .pageBox a.page_next::after{
+      right: calc(50% - 11px);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  
+
+/***Hover效果1: 放大淡出***/
+.imh_opacity{
+  position: relative;
+  overflow: hidden;
+}
+.imh_opacity a::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(35deg, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.imh_opacity:hover a::before{
+  opacity: 0.8;
+}
+.imh_opacity img{
+  -webkit-transition: all 1.5s cubic-bezier(0.07, 0.51, 0.12, 1);
+  -o-transition: all 1.5s cubic-bezier(0.07, 0.51, 0.12, 1);
+  transition: all 1.5s cubic-bezier(0.07, 0.51, 0.12, 1);
+}
+.imh_opacity:hover img{
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/***Hover效果1: 放大淡出Detail***/
+.imh_detail{
+  position: relative;
+  overflow: hidden;
+}
+.imh_detail img {
+  -webkit-transition: all 2s linear;
+  -o-transition: all 2s linear;
+  transition: all 2s linear;
+}
+.imh_detail:hover img{
+  -webkit-transition: all 4s linear;
+  -o-transition: all 4s linear;
+  transition: all 4s linear;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/***Hover效果1: 放大淡出zoom***/
+.imh_zoom{
+  position: relative;
+  overflow: hidden;
+}
+.imh_zoom img{
+  -webkit-transition: all 0.45s linear;
+  -o-transition: all 0.45s linear;
+  transition: all 0.45s linear;
+}
+li:hover .imh_zoom img,
+.imh_zoom:hover img{
+  opacity: 1;
+  -webkit-transform: scale(1.1) rotate(5deg);
+  -ms-transform: scale(1.1) rotate(5deg);
+  transform: scale(1.1) rotate(5deg);
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 767px) {
+  div.background {
+   display: none;
+    height: 50px;
+}
+  .clearfix{
+    width: 100% !important;
+  }
+  ul.classLink{
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+  .mainArea.ins{
+  width: 100% !important;
+  }
+  ul.itemList{
+    margin-top:50px !important;
+  }
+  ul.itemList{
+    margin-top:50px !important;
+  }
+  div.item{
+    width: 100% !important;
+  }
+  div.imh_opacity{
+    width: 100% !important;
+  }
+  ul.itemList li{
+    position: relative;
+    padding: 0px auto !important;
+  }
+
+  }

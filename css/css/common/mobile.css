@@ -1,0 +1,122 @@
+/*桌機版*/
+@media screen and (min-width: 768px) {
+
+    .header_main {
+        display: block;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+}
+
+/*手機版*/
+@media screen and (max-width: 767px) {
+
+    div.header_main {
+        display: none;
+    }
+
+    .header_main {
+        display: inline-block;
+        width: 100%;
+        height: 600px;
+        background-color: white;
+        z-index: 998;
+    }
+
+    .nav_list {
+        display: block;
+        width: 200px;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    h2.About_title {
+        text-align: center;
+        position: none;
+        margin: 0rem auto !important;
+    }
+
+    div.About_company {
+        position: relative !important;
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: auto;
+        height: 800px;
+        width: 400px;
+    }
+
+    a.company-img {
+        position: relative;
+        left: 0px;
+        top: -250px;
+    }
+
+    img.About_img:hover {
+        transform: none;
+    }
+
+    div.company_img>img {
+        width: 100%;
+    }
+
+    div.company_text {
+        position: none !important;
+        text-align: center;
+    }
+
+
+
+
+
+    div.serve_content {
+        display: inline-block !important;
+        /* width: 400px !important; */
+        background-image: none;
+    }
+
+    div.serve_content1 {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+        border: solid 1px green;
+    }
+
+    li.arrow {
+        visibility: hidden;
+    }
+
+    img.Award1_thumbcon:hover {
+        transform: none;
+    }
+
+    img.Award2_thumbcon:hover {
+        transform: none;
+    }
+
+    img.Award3_thumbcon:hover {
+        transform: none;
+    }
+
+    /*about*/
+    div.About_wrapper {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    ul.serve_content{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+
+
+}

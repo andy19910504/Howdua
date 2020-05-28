@@ -1,0 +1,65 @@
+footer.footer {
+    width: 100%;
+    min-width: 1200px;
+    height: 250px;
+    box-sizing: border-box;
+    border-top: 1px #C0C0C0 solid;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3E3A39;
+}
+.footer::before {
+    width: 504px;
+    height: 248px;
+    content: "";
+    position: absolute;
+    right: 0;
+    background-image: url(/images/index/contain/footer_doco02_sm.png);
+}
+
+div.footer_main {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    height: 200px;
+}
+
+
+
+.footer_list .list {
+    display: inline-flex;
+}
+/*選單*/
+.footer_list{
+    justify-content:center;
+    width: 500px;
+    position: relative;
+    bottom: -10px;
+}
+.footer_list li>a {
+    color: #a9a9a9;
+    font-weight: 600;
+    display: inline-block;
+    width: 145px;
+    height: 100px;
+    transition: all 0.2s linear;
+}
+
+.footer_list li {
+    width: 130px;
+    height: 40px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.footer_list li>a:hover {
+    transform: translateY(-35px);
+}
+.address {
+    margin-right: 10px;
+    width: 400px;
+    color: #a9a9a9;
+    font-weight: 600;
+    text-align: left;
+}

@@ -1,0 +1,225 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+
+li a.mark {
+  color: #77AA00
+}
+
+div.background {
+  width: 100%;
+  height: 600px;
+  background-image: url(../images/background/background4.jpg);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+div.serve_wrapper{
+  margin-top: 100px;
+  position: relative;
+  height: 1800px;
+  width: 1200px;
+}
+
+/*progress1*/
+div.progress-1{
+  flex-wrap: wrap;
+  display: inline-flex;
+  width:100%;
+  align-items: center; 
+}
+div.progress1{
+  display: flex;
+}
+div.progress1_text{
+  width: 100%;
+  height: 250px;
+}
+
+/*progress2*/
+div.progress2{
+  display: flex;
+}
+
+div.progress2_text{
+  width: 100%;
+  height: 250px;
+}
+/*progress3*/
+div.progress-2{
+  display: inline-flex;
+  width:100%;
+  align-items: center; 
+}
+div.progress3_text{
+  width: 100%;
+}
+
+div.progress3 {
+  display: flex;
+}
+
+/*progress4*/
+div.progress4 {
+  display: flex;
+}
+div.progress4_text{
+  width: 100%;
+}
+
+/*border: 1px solid red;*/
+
+/*progress5*/
+div.progress-3{
+  display: inline-flex;
+  width:100%;
+  align-items: center; 
+}
+div.progress5{
+  display: flex;
+}
+div.progress5_text{
+  width: 100%;
+}
+
+/*progress6*/
+div.progress6{
+  display: flex;
+}
+
+
+div.img_dotte3{
+  width: 200px;
+}
+div.progress6_text{
+  width: 100%;
+}
+/*progress7*/
+div.progress-4{
+  display: inline-flex;
+  width:100%;
+  align-items: center; 
+}
+div.progress7 {
+  display: flex;
+}
+div.progress7_text{
+  width: 100%;
+}
+.checkArea{
+  font-weight: 300;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  background: #111;
+  border: 1px solid transparent;
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  padding: 0;
+  z-index: 5;
+  transition: all 0.4s ease;
+  width: 180px;
+  height: 45px;
+  line-height: 45px;
+  letter-spacing: 1.5px;
+  border-radius: 0;
+  }
+    .checkArea .btn{
+      display: inline-block;
+      vertical-align: top;
+  
+    }
+    .checkArea .btn a{
+      width: 180px;
+      height: 45px;
+      line-height: 45px;
+      letter-spacing: 1.5px;
+      border-radius: 0;
+      color: white;
+  
+    }
+    .checkArea:hover{
+      background: #6fa203;
+  
+    }
+    .checkArea .btn a::before,
+    .checkArea .btn a:after{
+      display: none;
+  
+    }
+  
+  .sliderBox {
+    position: relative;
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle;
+
+  }
+  
+  /*手機版*/
+@media(max-width: 767px) {
+  .wrapper{
+    width: 100%;
+  }
+  .checkArea{
+    display: none;
+  }
+  div.background {
+    background-image: none;
+    visibility:none;
+    height: 100px;
+}
+  div.serve_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    position: relative;
+    width: 100% !important;
+  }
+  .checkArea{
+    width: 100%;
+    margin-top:0px ;
+  }
+  /* .progress-1{
+    border: red 1px solid;
+  
+  } */
+  .progress1,.progress2,.progress3,.progress4,.progress5,.progress6,.progress7{
+    margin-top: 100px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+  }
+ 
+  .progress-2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100% !important;
+  
+  }
+  .progress-3{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100% !important;
+  }
+
+  .progress-4{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100% !important;
+  }
+  .img_dotte ,.img_dotte2,.img_dotte3{
+    display: none;
+    
+  }
+  .progress1_text>ul,.progress2_text>ul,.progress3_text>ul,.progress4_text>ul,.progress5_text>ul,.progress6_text>ul,.progress7_text>ul{
+    padding-inline-start: 0px;
+  }
+
+}

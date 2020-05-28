@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/Awards.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/common/bootstrap.min.css">
+
+  <title>HowDua</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+  <header class="header">
+    <a class="logo" href="index.html"><img src="./images/How Dua LOGO.png"></a>
+    <div class="navbar-header">
+        <button type="button" class="btn_switch" id="hamburger_icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="header_main">
+        <nav class="nav main_nav">
+            <ul class="nav_list">
+                <li>
+                    <a href="./About.html">關於我們<br>About</a>
+                </li>
+                <li>
+                    <a href="./Designteam.html">設計團隊<br>DesignTeam</a>
+                </li>
+                <li>
+                    <a href="./Portfolio.html">作品<br>Portfolio</a>
+                </li>
+                <li>
+                    <a class="mark" href="./Awards.html">得獎紀錄<br>Awards</a>
+                </li>
+                <li>
+                    <a href="./Serve.html">服務<br>Serve</a>
+                </li>
+                <li>
+                    <a href="./contact.html">聯絡我們<br>Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="icon main_nav">
+            <div class="social-btns">
+                <a class="btn facebook" href="#"><i class="fa fa-facebook"></i></a>
+                <a class="btn youtube" href="#"><i class="fa fa-youtube"></i></a>
+                <a class="btn instagram" href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</header>
+  <div class="wrapper">
+    <div class="background"></div>
+    <div class="Award_wrapper row">
+      <div class="Award1">
+        <a href="#">
+          <div class="Award1_thumbcon">
+            <img class="Award1_thumbcon" src="./images/Awards/Awards4.jpg" alt="2019 ADA 酒店餐飲空間組 金獎">
+          </div>
+        </a>
+        <div class="thumbcon">
+          <div>2019 ADA 酒店餐飲空間組 金獎</div>
+          <div>
+            <h4>2019 亞洲設計獎 金獎</h4>
+            <h4 class="thumbcon">Award</h4>
+          </div>
+        </div>
+
+      </div>
+      <div class="Award2">
+        <a href="#">
+          <div class="Award2_thumbcon">
+            <img class="Award2_thumbcon" src="./images/Awards/Awards2.jpg" alt=" 2018 ADesign Award銀獎">
+          </div>
+        </a>
+        <div class="thumbcon2">
+          <div>2018 A' Design Award 銀獎</div>
+          <div>
+            <h4 class="thbcone2">Award</h4>
+          </div>
+        </div>
+
+      </div>
+      <div class="Award3">
+        <a href="#">
+          <div class="Award3_thumbcon">
+            <img class="Award3_thumbcon" src="./images/Awards/Awards5.jpg" alt="2016 TINTA 餐飲空間類 新秀獎">
+          </div>
+        </a>
+          <div class="thumbcon3">
+            <div>2016 TINTA 餐飲空間類 新秀獎</div>
+            <div>
+              <h4 class="thbctwo3">Award</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer_main">
+        <div class="address">
+          <p>地址:高雄市苓雅區政南路</p>
+          <p>電話:07-1234567</p>
+          <p>E-MAIL:abcd1234@gmail.com</p>
+          <p>&copy;All Rights Reserved</p>
+        </div>
+        <div class="social-btns social-btns1 ">
+          <a class="btn facebook" href="#"><i class="fa fa-facebook"></i></a>
+          <a class="btn youtube" href="#"><i class="fa fa-youtube"></i></a>
+          <a class="btn instagram" href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="footer_list">
+          <ul class="list">
+            <li><a href="./About.html">關於我們<br>About</a></li>
+            <li><a href="./Design team.html">設計團隊<br>DesignTeam</a></li>
+            <li><a href="./Portfolio.html">作品<br>Portfolio</a></li>
+          </ul>
+          <ul class="list">
+            <li><a href="Awards.html">得獎紀錄<br>Awards</a></li>
+            <li><a href="./Serve.html">服務<br>Serve</a></li>
+            <li><a href="./contact.html">聯絡我們<br>Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script>
+    $(function () {
+        /* 按鈕狀態的切換 */
+        $("#hamburger_icon").on("click", function () {
+            $(this).toggleClass("on");
+        });
+    });
+</script>
+<script>
+    $(function () {
+
+        // 點擊按鈕，選單縮放
+        $("button.btn_switch").on("click", function () {
+            $(".header_main").slideToggle();
+        });
+
+    });
+</script>
+</body>
+
+</html>

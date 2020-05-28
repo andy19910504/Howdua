@@ -1,0 +1,259 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+
+/*手機版*/
+
+
+
+li a.mark{
+  color:#77AA00
+}
+div.background{
+  width: 100%;
+  height:500px;
+  background-image: url(../images/background/background5.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+div.mainArea{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 1200px;
+  color: #111;
+  font-weight: 300;
+  }
+  
+
+/*formBox*/
+  .formBox{
+    display: inline-flex;
+    width:1200px;
+    margin: 0 -10px;
+  }
+  .formBox .left{
+    margin-bottom: 5px;
+  }
+  .formBox label{
+    display: inline-block;
+    margin-right: 7px; 
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    color: #000;
+  }
+
+  /*星號的顏色*/
+  .formBox label em{
+    color: #ff4d4d;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 3px;
+    
+  }
+  .formBox .right{
+      position: relative;
+  }
+  .formBox .right::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0%;
+    height: 1px;
+    background: #8b2538;
+    transition: all .5s;
+    
+  }
+  .formBox .current .right::after {
+    width: 100%;
+    
+  }
+
+  .formBox input[type="text"],
+  .formBox textarea{
+    outline: none;
+    color: #272727;
+    padding: 5px 10px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    border: 1px solid silver;
+    background: #fff;
+    border-radius: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, 'Noto Sans TC', "微軟正黑體";
+    display: inline-flex;
+    transition: all 0.4s ease;
+  }
+
+  .formBox input[type="text"]:focus,
+  .formBox textarea:focus{
+    outline: #b13b09;
+    border-color: #77aa00;
+  }
+  .formBox select:focus{
+    outline: #b13b09;
+    border-color: #77aa00;
+  }
+
+  .formBox select {
+    padding: 5px 10px;
+    width: 200px;
+    height: 40px;
+    color: #272727;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 0px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, 'Noto Sans TC', "微軟正黑體";
+    letter-spacing: 0.5px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+
+  .formBox textarea{
+    height: 130px;
+  }
+  .formBox input[type="radio"]{
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    padding: 0;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    cursor: pointer;
+    margin:0 auto;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .formBox input[type="radio"]:checked{
+    background: #77aa00;
+    border-color: #77aa00;
+  }
+
+  .formBox input[type="checkbox"]{
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    width: 15px;
+    height: 15px;
+    margin:0 auto;
+    border: 1px solid #999;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .formBox input[type="checkbox"]:checked{
+    background: #77aa00;
+    border-color: #77aa00;
+  }
+
+
+/*送出按鈕*/
+.checkArea{
+font-weight: 300;
+box-sizing: border-box;
+outline: none;
+margin-top: 50px;
+text-decoration: none;
+cursor: pointer;
+color: #fff;
+background: #111;
+border: 1px solid transparent;
+display: inline-block;
+font-size: 14px;
+text-align: center;
+position: relative;
+left: 150px;
+padding: 0;
+z-index: 5;
+transition: all 0.4s ease;
+width: 180px;
+height: 45px;
+line-height: 45px;
+letter-spacing: 1.5px;
+border-radius: 0;
+}
+  .checkArea .btn{
+    display: inline-block;
+    vertical-align: top;
+  }
+  .checkArea .btn a{
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+    letter-spacing: 1.5px;
+    border-radius: 0;
+  }
+  .checkArea:hover{
+    background: #6fa203;
+  }
+  .checkArea .btn a::before,
+  .checkArea .btn a:after{
+    display: none;
+  }
+
+.sliderBox {
+  position: relative;
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+@media screen and (max-width: 767px) {
+  div.background {
+    background-image: none;
+    visibility:none;
+    height: 100px;
+}
+div.mainArea{
+  width: 100%;
+}
+  div.formBox{
+    width: 100%;
+    margin:0 auto;
+  }
+  .checkArea{
+    text-align: center;
+  }
+  div.checkArea{
+    font-weight: 300;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    background: #111;
+    border: 1px solid transparent;
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    position: unset;
+    padding: 0;
+    z-index: 5;
+    transition: all 0.4s ease;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    letter-spacing: 1.5px;
+    border-radius: 0;
+    }
+}
+
+
